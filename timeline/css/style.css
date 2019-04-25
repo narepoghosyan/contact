@@ -1,0 +1,104 @@
+.charges {
+	padding: 30px 40px;
+}
+
+.charge-icon {
+	font-size: 45px !important;
+	color: #496FF6;
+	margin-right: 30px;
+}
+
+.current {
+	font-size: 30px;
+	color: #4C555C;
+}
+
+.schedule {
+	padding: 20px 40px 30px 40px;
+}
+
+.payment {
+	color: #43535E;
+}
+
+.total1 {
+	color: #4B71FF;
+	float: left;
+}
+
+.total2 {
+	color: #4B71FF;
+	float: right;
+}
+
+.date {
+	font-size: 22px;
+	color: #4B525A;
+	top: 30px;
+	position:absolute;
+	right: 0;
+}
+
+.money {
+	font-size: 22px;
+	font-weight: bold;
+	color: #5B6269;
+	position:absolute;
+	top: 15px;
+}
+
+.desc {
+	font-size: 18px;
+	color: #606569;
+	position:absolute;
+	top: 50px;
+}
+
+.line1 {
+	width: 17px;
+	height: 100%;
+	background-color: #D3E4FF;
+	margin: 0 auto;
+	border-radius: 20px 20px 0 0;
+	position: relative;
+}
+
+.line2 {
+	width: 17px;
+	height: 100%;
+	background-color: #D3E4FF;
+	margin: 0 auto;
+	position: relative;
+}
+
+.line3 {
+	width: 17px;
+	height: 100%;
+	background-color: #D3E4FF;
+	margin: 0 auto;
+	border-radius: 0 0 20px 20px;
+	position: relative;
+}
+
+.circle {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	box-shadow: 0 0 7px 5px #C9D9F3;
+	background-color: white;
+	position: absolute;
+	top: 22%;
+	right: -17px
+}
+
+@media screen and (max-width:445px){
+	.total1 {
+		float: none;
+	}
+
+	.total2 {
+		float:none;
+	}
+
+}

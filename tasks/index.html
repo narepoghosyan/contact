@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tasks</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container-fluid main">
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-2 p-0 bg-white">
+				<div class="vertical-menu">
+				    <a href="#" class="tasks"><h3>TASKS</h3></a>
+				    <a href="#" class="active">
+				  	    <i class="fas fa-tasks fa-2x mb-2"></i>
+				  	    <i class="fas fa-mouse-pointer small-icon"></i>
+				  	    <br>
+				        Task List
+				    </a>
+				    <a href="#">
+				  	    <i class="fas fa-tasks fa-2x mb-2"></i>
+				  	    <br>
+				        Task Page
+				    </a>
+				    <a href="#">
+				  	    <i class="fas fa-tasks fa-2x mb-2"></i>
+				  	    <i class="fas fa-plus-circle small-icon"></i>
+				  	    <br>
+				        New Task
+				    </a>
+				    <a href="#">
+				  	    <i class="fas fa-tasks fa-2x mb-2"></i>
+				  	    <i class="fas fa-spinner small-icon"></i>
+				  	    <br>
+				        Task Progress
+				    </a>
+				    <a href="#">
+				    	<i class="fas fa-tasks fa-2x mb-2"></i>
+				    	<i class="fas fa-pen small-icon"></i>
+				    	<br>
+				    	Editing of a task
+				    </a>
+				    <a href="#">
+				    	<i class="fas fa-tasks fa-2x mb-2"></i>
+				    	<i class="far fa-comment small-icon"></i>
+				    	<br>
+				    	Adding a comment
+				    </a>
+				</div>
+			</div>
+			<div class="col-sm-12 col-12 col-md-10 p-0">
+				<nav class="navbar navbar-expand-lg navbar-light bg-white pl-4 pr-4">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                         <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href=""><i class="fas fa-search search-icon"></i></a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ml-auto">
+                        	<li class="nav-item mt-3 mr-3"><a href="#"><i class="far fa-envelope env-icon"></i></a></li>
+                            <li class="nav-item dropdown drop mr-2 mb-3">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                	<div class="profile float-left mr-3" style="background-image:url('images/avatar.jpg')"></div>
+                                    <i class="fas fa-chevron-down drop-icon"></i>
+                                </a>
+                                <div class="dropdown-menu bg-white" aria-labelledby="navbarDropdown"> 
+                                    <a class="dropdown-item text-primary" href="">Logout</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="for-table" style="overflow:auto">
+                	<table class="table bg-white">
+                	    <caption class="bg-white pl-3 pr-3 text-dark"><span class="float-left font-weight-bold">All Tasks</span><a href="" class="float-right"><i class="fas fa-ellipsis-h fa-2x text-secondary"></i></a></caption>
+					    <tbody>
+					    	<colgroup>
+							    <col class="three" />
+							    <col class="twentyfour" />
+							    <col class="thirty" />
+							    <col class="twenty" />
+							    <col class="twelve" />
+							    <col class="eleven" />
+						    </colgroup>
+					        <tr>
+						        <td><input type="checkbox" value=""></td>
+						        <td>Make a Wireframe</td>
+						        <td>
+						        	<div class="line">
+						        		<div class="blue inner-line" style="width:30%">
+						        			<div class="left-dot blue"></div>						     
+						        		</div>
+						        		<div class="inner-line lightgray" style="width:20%"></div>
+						                <div class="white-dot"></div>
+						        		<div class="inner-line gray" style="width:30%"></div>
+						                <div class="white-dot"></div>
+						        	</div>
+						        </td>
+						        <td>
+						        	<div class="small-dot pink float-left mt-2 mr-3"></div>
+						        	High Priority
+						        </td>
+						        <td>
+						        	<a href="#">
+							        	<i class="far fa-comment-dots message"></i>
+							        	<span class="notify red">3</span>
+						            </a>
+						        </td>
+						        <td><button class="inprogress bg-transparent">In Progress</button></td>
+					        </tr>
+					        <tr>
+							    <td><input type="checkbox" value=""></td>
+						        <td>Video Apps Redesign</td>
+						        <td>
+						        	<div class="line">
+						        		<div class="green inner-line" style="width:30%">
+						        			<div class="left-dot green"></div>						     
+						        		</div>
+						        		<div class="inner-line lightgray" style="width:20%"></div>
+						                <div class="white-dot"></div>
+						        		<div class="inner-line gray" style="width:30%"></div>
+						                <div class="white-dot"></div>
+						        	</div>
+						        </td>
+						        <td>
+						        	<div class="small-dot orange float-left mt-2 mr-3"></div>
+						        	Medium Priority
+						        </td>
+						        <td>
+						        	<a href="#">
+							        	<i class="far fa-comment-dots message"></i>
+							        	<span class="notify green">3</span>
+						            </a>
+						        </td>
+						        <td><button class="inprogress bg-transparent">In Progress</button></td>
+					        </tr>
+						    <tr>
+						         <td><input type="checkbox" value=""></td>
+						        <td>Website design</td>
+						        <td>
+						        	<div class="line">
+						        		<div class="blue inner-line" style="width:30%">
+						        			<div class="left-dot blue"></div>						     
+						        		</div>
+						        		<div class="inner-line lightgray" style="width:20%"></div>
+						                <div class="white-dot"></div>
+						        		<div class="inner-line gray" style="width:30%"></div>
+						                <div class="white-dot"></div>
+						        	</div>
+						        </td>
+						        <td>
+						        	<div class="small-dot yellow float-left mt-2 mr-3"></div>
+						        	Low Priority
+						        </td>
+						        <td>
+						        	<a href="#">
+							        	<i class="far fa-comment-dots message"></i>
+							        	<span class="notify blue">3</span>
+						            </a>
+						        </td>
+						        <td><button class="inprogress bg-transparent">In Progress</button></td>
+						    </tr>
+						    <tr>
+						    	<td><input type="checkbox" value=""></td>
+						        <td>Meeting CEO</td>
+						        <td>
+						        	<div class="line">
+						        		<div class="pink inner-line" style="width:25%">
+						        			<div class="left-dot pink"></div>						     
+						        		</div>
+						        		<div class="inner-line lightgray" style="width:15%"></div>
+						                <div class="white-dot"></div>
+						        		<div class="inner-line gray" style="width:40%"></div>
+						                <div class="white-dot"></div>
+						        	</div>
+						        </td>
+						        <td>
+						        	<div class="small-dot pink float-left mt-2 mr-3"></div>
+						        	High Priority
+						        </td>
+						        <td>
+						        	<a href="#">
+							        	<i class="far fa-comment-dots message"></i>
+							        	<span class="notify green">3</span>
+						            </a>
+						        </td>
+						        <td><button class="inprogress bg-transparent">In Progress</button></td>
+						    </tr>
+						    <tr>
+						    	<td><input type="checkbox" value=""></td>
+						        <td>Need to make a Wireframe</td>
+						        <td>
+						        	<div class="line">
+						        		<div class="green inner-line" style="width:23%">
+						        			<div class="left-dot green"></div>						     
+						        		</div>
+						        		<div class="inner-line lightgray" style="width:22%"></div>
+						                <div class="white-dot"></div>
+						        		<div class="inner-line gray" style="width:35%"></div>
+						                <div class="white-dot"></div>
+						        	</div>
+						        </td>
+						        <td>
+						        	<div class="small-dot orange float-left mt-2 mr-3"></div>
+						        	Medium Priority
+						        </td>
+						        <td>
+						        	<a href="#">
+							        	<i class="far fa-comment-dots message"></i>
+							        	<span class="notify red">3</span>
+						            </a>
+						        </td>
+						        <td><button class="inprogress bg-transparent">In Progress</button></td>
+						    </tr>
+						    <tr>
+						    	<td><input type="checkbox" value=""></td>
+						        <td>IOS apps design</td>
+						        <td>
+						        	<div class="line">
+						        		<div class="blue inner-line" style="width:30%">
+						        			<div class="left-dot blue"></div>						     
+						        		</div>
+						        		<div class="inner-line lightgray" style="width:20%"></div>
+						                <div class="white-dot"></div>
+						        		<div class="inner-line gray" style="width:30%"></div>
+						                <div class="white-dot"></div>
+						        	</div>
+						        </td>
+						        <td>
+						        	<div class="small-dot yellow float-left mt-2 mr-3"></div>
+						        	Low Priority
+						        </td>
+						        <td>
+						        	<a href="#">
+							        	<i class="far fa-comment-dots message"></i>
+							        	<span class="notify blue">3</span>
+						            </a>
+						        </td>
+						        <td><button class="inprogress bg-transparent">In Progress</button></td>
+						    </tr>
+						    <tr>
+						    	<td><input type="checkbox" value=""></td>
+						        <td>Wireframe Design started</td>
+						        <td>
+						        	<div class="line">
+						        		<div class="pink inner-line" style="width:25%">
+						        			<div class="left-dot pink"></div>						     
+						        		</div>
+						        		<div class="inner-line lightgray" style="width:15%"></div>
+						                <div class="white-dot"></div>
+						        		<div class="inner-line gray" style="width:40%"></div>
+						                <div class="white-dot"></div>
+						        	</div>
+						        </td>
+						        <td>
+						        	<div class="small-dot pink float-left mt-2 mr-3"></div>
+						        	High Priority
+						        </td>
+						        <td>
+						        	<a href="#">
+							        	<i class="far fa-comment-dots message"></i>
+							        	<span class="notify red">3</span>
+						            </a>
+						        </td>
+						        <td><button class="inprogress bg-transparent">In Progress</button></td>
+						    </tr>
+						    <tr>
+						    	<td><input type="checkbox" value=""></td>
+						        <td>Dashboard design</td>
+						        <td>
+						        	<div class="line">
+						        		<div class="green inner-line" style="width:23%">
+						        			<div class="left-dot green"></div>						     
+						        		</div>
+						        		<div class="inner-line lightgray" style="width:22%"></div>
+						                <div class="white-dot"></div>
+						        		<div class="inner-line gray" style="width:35%"></div>
+						                <div class="white-dot"></div>
+						        	</div>
+						        </td>
+						        <td>
+						        	<div class="small-dot orange float-left mt-2 mr-3"></div>
+						        	Medium Priority
+						        </td>
+						        <td>
+						        	<a href="#">
+							        	<i class="far fa-comment-dots message"></i>
+							        	<span class="notify blue">3</span>
+						            </a>
+						        </td>
+						        <td><button class="inprogress bg-transparent">In Progress</button></td>
+						    </tr>
+						    <tr>
+						    	<td><input type="checkbox" value=""></td>
+						        <td>IOS Video apps design</td>
+						        <td>
+						        	<div class="line">
+						        		<div class="blue inner-line" style="width:30%">
+						        			<div class="left-dot blue"></div>						     
+						        		</div>
+						        		<div class="inner-line lightgray" style="width:20%"></div>
+						                <div class="white-dot"></div>
+						        		<div class="inner-line gray" style="width:30%"></div>
+						                <div class="white-dot"></div>
+						        	</div>
+						        </td>
+						        <td>
+						        	<div class="small-dot yellow float-left mt-2 mr-3"></div>
+						        	Low Priority
+						        </td>
+						        <td>
+						        	<a href="#">
+							        	<i class="far fa-comment-dots message"></i>
+							        	<span class="notify green">3</span>
+						            </a>
+						        </td>
+						        <td><button class="inprogress bg-transparent">In Progress</button></td>
+						    </tr>
+						    <tr>
+						    	<td><input type="checkbox" value=""></td>
+						        <td>Make a Wireframe</td>
+						        <td>
+						        	<div class="line">
+						        		<div class="pink inner-line" style="width:25%">
+						        			<div class="left-dot pink"></div>						     
+						        		</div>
+						        		<div class="inner-line lightgray" style="width:15%"></div>
+						                <div class="white-dot"></div>
+						        		<div class="inner-line gray" style="width:40%"></div>
+						                <div class="white-dot"></div>
+						        	</div>
+						        </td>
+						        <td>
+						        	<div class="small-dot pink float-left mt-2 mr-3"></div>
+						        	High Priority
+						        </td>
+						        <td>
+						        	<a href="#">
+							        	<i class="far fa-comment-dots message"></i>
+							        	<span class="notify blue">3</span>
+						            </a>
+						        </td>
+						        <td><button class="inprogress bg-transparent">In Progress</button></td>
+						    </tr>
+						    <tr>
+						    	<td><input type="checkbox" value=""></td>
+						        <td>Make a Wireframe</td>
+						        <td>
+						        	<div class="line">
+						        		<div class="green inner-line" style="width:30%">
+						        			<div class="left-dot green"></div>						     
+						        		</div>
+						        		<div class="inner-line lightgray" style="width:20%"></div>
+						                <div class="white-dot"></div>
+						        		<div class="inner-line gray" style="width:30%"></div>
+						                <div class="white-dot"></div>
+						        	</div>
+						        </td>
+						        <td>
+						        	<div class="small-dot orange float-left mt-2 mr-3"></div>
+						        	Medium Priority
+						        </td>
+						        <td>
+						        	<a href="#">
+							        	<i class="far fa-comment-dots message"></i>
+							        	<span class="notify green">3</span>
+						            </a>
+						        </td>
+						        <td><button class="inprogress bg-transparent">In Progress</button></td>
+						    </tr>
+					    </tbody>
+				    </table>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

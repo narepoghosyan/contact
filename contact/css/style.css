@@ -1,0 +1,61 @@
+h2 {
+	color: #69AFAF;
+}
+
+.submit {
+	border: 2px solid #73C8C1;
+	border-radius: 3px;
+	margin-top: 20px;
+	font-size: 20px;
+	color: #73C8C1;
+	font-weight: bold;
+	padding: 7px 25px;
+}
+
+.form-group {
+	position: relative;
+	width: 48%;
+	margin-top: 30px;
+}
+
+.form-input {
+	width: 100%;
+	border: 0;
+    box-shadow: 0 1px 0 0 #e5e5e5;
+    padding: 12px 0px 5px 0;
+
+}
+
+.message-input {
+	width: 100%;
+	border: 0;
+    box-shadow: 0 1px 0 0 #e5e5e5;
+    padding: 12px 0px 5px 0;
+}
+
+.form-input:focus, .message-input:focus {
+	outline: none !important;
+}
+
+.label {
+    color: #999;
+    font-size: 18px;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+}
+
+.message {
+	bottom: 120px;
+}
+
+.for-m {
+	width: 100%;
+}
+
+@media screen and (max-width: 767px){
+	.form-group {
+		display: block;
+		width: 100%;
+	}
+}
